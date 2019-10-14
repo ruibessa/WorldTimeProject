@@ -9,7 +9,7 @@ import java.time.ZoneOffset;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeUtils;
 
-public class WorlTimeTest {
+public class WorldTimeTest {
 	private WorldTime wt;
 
 	@BeforeEach
@@ -28,6 +28,6 @@ public class WorlTimeTest {
     	//Act
         boolean expected = wt.getTimeByCountry("America/New_York").matches(validationPattern);
         //Assert
-        Assertions.assertTrue(expected, () -> "Wrong format");
+        Assertions.assertTrue(expected, "Wrong format");
     }
 }
